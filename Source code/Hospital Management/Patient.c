@@ -1,5 +1,8 @@
 #include<stdio.h>
 #include "patient.h"
+void PatientMain(){
+printf("Patient");
+}
 void addPatient(){
 
 

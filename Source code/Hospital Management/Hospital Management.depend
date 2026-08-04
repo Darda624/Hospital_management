@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1785807736 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\main.c
+	<stdio.h>
+	"Appointment.h"
+	"Room.h"
+	"Patient.h"
+	"Doctor.h"
+	"Pharmacy.h"
+	"Billing.h"
+
+1785804512 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\appointment.h
+
+1785805706 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\room.h
+
+1785805231 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\patient.h
+
+1785806056 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\doctor.h
+
+1785805398 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\pharmacy.h
+
+1785805713 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\billing.h
+
+1785807080 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\appointment.c
+	<stdio.h>
+	"Appointment.h"
+
+1785806972 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\billing.c
+	<stdio.h>
+	"Billing.h"
+
+1785806904 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\doctor.c
+	<stdio.h>
+	"Doctor.h"
+
+1785806879 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\patient.c
+	<stdio.h>
+	"patient.h"
+
+1785806856 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\room.c
+	<stdio.h>
+	"Room.h"
+
+1785809387 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\pharmacy.c
+	<stdio.h>
+	"Pharmacy.h"
+
