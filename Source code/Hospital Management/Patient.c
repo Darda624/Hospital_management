@@ -46,8 +46,10 @@ void PatientMain(){
 void addPatient(){
 
 
+
 }
 void viewPatients(){
+
 
 
 }

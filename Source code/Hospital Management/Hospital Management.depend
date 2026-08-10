@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1785815856 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\main.c
+1786389230 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\main.c
 	<stdio.h>
 	"Appointment.h"
 	"Room.h"
@@ -8,39 +8,39 @@
 	"Pharmacy.h"
 	"Billing.h"
 
-1785804512 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\appointment.h
+1786274386 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\appointment.h
 
-1785805706 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\room.h
+1786274386 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\room.h
 
-1785805231 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\patient.h
+1786274386 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\patient.h
 
-1785806056 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\doctor.h
+1786274386 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\doctor.h
 
-1785805398 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\pharmacy.h
+1786274386 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\pharmacy.h
 
-1785805713 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\billing.h
+1786274386 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\billing.h
 
-1785815962 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\appointment.c
+1786274386 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\appointment.c
 	<stdio.h>
 	"Appointment.h"
 
-1785806972 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\billing.c
+1786274386 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\billing.c
 	<stdio.h>
 	"Billing.h"
 
-1785818083 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\doctor.c
+1786274386 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\doctor.c
 	<stdio.h>
 	"Doctor.h"
 
-1785817596 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\patient.c
+1786388555 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\patient.c
 	<stdio.h>
 	"patient.h"
 
-1785817048 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\room.c
+1786274386 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\room.c
 	<stdio.h>
 	"Room.h"
 
-1785816559 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\pharmacy.c
+1786274386 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\pharmacy.c
 	<stdio.h>
 	"Pharmacy.h"
 
