@@ -6,23 +6,23 @@ void BillMain(){
     printf("3. Exit \n");
     int BillingTF=1;
     while(BillingTF){
-        int BillingIO;
-        scanf("%d",&BillingIO);
+        char BillingIO;
+        scanf(" %c",&BillingIO);
         switch (BillingIO){
-            case 1:{
+            case '1':{
             generateBill();
             break;
             }
-            case 2:{
+            case '2':{
             viewBill();
             break;
             }
-            case 3:{
+            case '3':{
             BillingTF=0;
             break;
             }
             default:{
-            printf("Invalid Input");
+            printf(">>> Error encountered while talking input ");
             }
 
         }

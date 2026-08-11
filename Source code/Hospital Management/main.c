@@ -15,17 +15,24 @@ if (yn=='Y'||yn=='y'){
     fopen("Doctor.txt","w");
     fopen("Patient.txt","w");
     fopen("Room.txt","w");
-    printf("\nSuccess Create/overwriting files \n");
+    system("cls");
+    printf("\n>>>Success Create/overwriting files \n");
 }
 else if (yn=='N'||yn=='n'){
-    printf("Retuning to Home\n");
+    system("cls");
+    printf(">>>Operation canceled by User");
 }
-
+else{
+    system("cls");
+    printf(">>> Error encountered while talking input ");
+}
 }
 void main (){
+
     int while_condition=1;
     int while_coun=1;
     while(while_condition){
+        system("color 3F");
         printf("\n==============================\n");
         printf("   HOSPITAL MANAGEMENT SYSTEM\n");
         printf("==============================\n");
@@ -38,46 +45,49 @@ void main (){
         printf("6. Billing\n");
         printf("7. Exit\n");
         printf("8. Create .txt files \n");
-        int main_input;
-        scanf("%d",&main_input);
+        char main_input;
+        scanf(" %c",&main_input);
         switch(main_input){
-            case 1:{
+            case '1':{
             system("cls");
             AppoinmentMain();
             break;
-            }case 2:{
+            }case '2':{
             system("cls");
             RoomMain();
             break;
-            }case 3:{
+            }case '3':{
             system("cls");
             PatientMain();
             break;
-            }case 4:{
+            }case '4':{
             system("cls");
             DoctorMain();
             break;
-            }case 5:{
+            }case '5':{
             system("cls");
             PharmacyMain();
             break;
-            }case 6:{
+            }case '6':{
             system("cls");
             BillMain();
             break;
-            }case 7:{
+            }case '7':{
             system("cls");
             printf(" Exit");
             while_condition= 0;
             break;
             }
-            case 8:{
+            case '8':{
             system("cls");
+            system("color 3E");
             fileCreate();
             break;
             }
             default:{
-            printf("Invalid Input");
+            system("cls");
+            printf(">>> Error encountered while talking input ");
+
             }
 
         }

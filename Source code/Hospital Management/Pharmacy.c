@@ -9,35 +9,35 @@ void PharmacyMain(){
     printf("6. Exit \n");
     int pharmacyTF=1;
     while(pharmacyTF){
-        int pharmacyIO;
-        scanf("%d",&pharmacyIO);
+        char pharmacyIO;
+        scanf(" %c",&pharmacyIO);
         switch (pharmacyIO){
-            case 1:{
+            case '1':{
             addMedicine();
             break;
             }
-            case 2:{
+            case '2':{
             viewMedicines();
             break;
             }
-            case 3:{
+            case '3':{
             searchMedicine();
             break;
             }
-            case 4:{
+            case '4':{
             updateStock();
             break;
             }
-            case 5:{
+            case '5':{
             sellMedicine();
             break;
             }
-            case 6:{
+            case '6':{
             pharmacyTF=0;
             break;
             }
             default:{
-            printf("Invalid Input");
+            printf(">>> Error encountered while talking input ");
             }
 
         }

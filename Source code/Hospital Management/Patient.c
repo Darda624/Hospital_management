@@ -9,35 +9,35 @@ void PatientMain(){
     printf("6. Exit \n");
     int PatientTF=1;
     while(PatientTF){
-        int PatientIO;
-        scanf("%d",&PatientIO);
+        char PatientIO;
+        scanf(" %c",&PatientIO);
         switch (PatientIO){
-            case 1:{
+            case '1':{
             addPatient();
             break;
             }
-            case 2:{
+            case '2':{
             viewPatients();
             break;
             }
-            case 3:{
+            case '3':{
             searchPatient();
             break;
             }
-            case 4:{
+            case '4':{
             updatePatient();
             break;
             }
-            case 5:{
+            case '5':{
             deletePatient();
             break;
             }
-            case 6:{
+            case '6':{
             PatientTF =0;
             break;
             }
             default:{
-            printf("Invalid Input");
+            printf(">>> Error encountered while talking input ");
             }
 
         }
