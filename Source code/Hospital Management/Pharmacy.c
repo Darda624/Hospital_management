@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include "Pharmacy.h"
 void PharmacyMain(){
+    int pharmacyTF=1;
+    while(pharmacyTF){
     printf("1. Add Medicine\n");
     printf("2. View Medicine\n");
     printf("3. Search Medicine\n");
     printf("4. Update Stock\n");
     printf("5. Sell Medicine\n");
     printf("6. Exit \n");
-    int pharmacyTF=1;
-    while(pharmacyTF){
         char pharmacyIO;
         scanf(" %c",&pharmacyIO);
         switch (pharmacyIO){

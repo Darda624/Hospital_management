@@ -1,14 +1,14 @@
 #include<stdio.h>
 #include "Doctor.h"
 void DoctorMain(){
+    int DoctorTF=1;
+    while(DoctorTF){
     printf("1. Add Doctor \n");
     printf("2. View Doctors \n");
     printf("3. Search Doctor \n");
     printf("4. Update Doctor \n");
     printf("5. DeleteDoctor \n");
     printf("6. Exit \n");
-    int DoctorTF=1;
-    while(DoctorTF){
         char DoctorIO;
         scanf(" %c",&DoctorIO);
         switch (DoctorIO){

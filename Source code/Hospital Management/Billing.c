@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include "Billing.h"
 void BillMain(){
+    int BillingTF=1;
+    while(BillingTF){
     printf("1. Generate Bill\n");
     printf("2. View Bil\n");
     printf("3. Exit \n");
-    int BillingTF=1;
-    while(BillingTF){
         char BillingIO;
         scanf(" %c",&BillingIO);
         switch (BillingIO){

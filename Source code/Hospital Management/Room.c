@@ -2,13 +2,13 @@
 #include "Room.h"
 
 void RoomMain(){
+    int RoomTF=1;
+    while(RoomTF){
     printf("1. View Rooms\n");
     printf("2. Assign Room\n");
     printf("3. Release Room\n");
     printf("4. Search Room\n");
     printf("5. Exit \n");
-    int RoomTF=1;
-    while(RoomTF){
         char RoomIO;
         scanf(" %c",&RoomIO);
         switch (RoomIO){
@@ -17,7 +17,9 @@ void RoomMain(){
             break;
             }
             case '2':{
-            assignRoom();
+            char a[50];
+            scanf(" %[^\n]",a);
+            assignRoom(a);
             break;
             }
             case '3':{
@@ -25,7 +27,9 @@ void RoomMain(){
             break;
             }
             case '4':{
-            searchRoom();
+            char s[50];
+            scanf(" %[^\n]",s);
+            searchRoom(s);
             break;
             }
             case '5':{
@@ -41,13 +45,24 @@ void RoomMain(){
 }
 void viewRooms(){
 
-}
-void assignRoom(){
 
+}
+void assignRoom(char room[]){
+    FILE *room_f;
+    room_f = fopen("Room.txt","a");
+    if (room_f == NULL) {
+        printf(">>> Error: Opening Room.txt \n");
+        return;
+    }
+    else{
+       fprintf(room_f,"\n %s ",room);
+
+    }
+    fclose(room_f);
 }
 void releaseRoom(){
 
 }
-void searchRoom(){
+int searchRoom(char search[]){
 
 }

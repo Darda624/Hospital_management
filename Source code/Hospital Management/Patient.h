@@ -3,7 +3,7 @@
 void PatientMain();
 void addPatient();
 void viewPatients();
-void searchPatient();
+int searchPatient(char search[]);
 void updatePatient();
 void deletePatient();
 

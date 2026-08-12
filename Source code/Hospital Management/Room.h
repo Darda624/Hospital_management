@@ -2,7 +2,7 @@
 #define ROOM_H
 void RoomMain();
 void viewRooms();
-void assignRoom();
+void assignRoom(char room[]);
 void releaseRoom();
-void searchRoom();
+int searchRoom(char search[]);
 #endif
