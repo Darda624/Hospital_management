@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include "patient.h"
 #include "Room.h"
+#define MAX 256
 void PatientMain(){
     int PatientTF=1;
     while(PatientTF){
@@ -138,6 +139,21 @@ void updatePatient(){
 
 }
 void deletePatient(){
+/**       File *patien_f;
+       File *patien_f2;
+       patien_f=fopen("Patient.txt","r");
+       if(patien_f=NULL){
+        printf("Error while opening file Patient.txt \n")
+       }
+       patien_f2=fopen("Temp.txt","w");
+       if(patien_f2=NULL){
+        printf("Error while opening file Temp.txt \n")
+       }
+       char Name_remove[50];
+       viewPatients();
+       printf("Enter Patient Name");
+       scanf("%[^\n]",Name_remove);**/
+
 
 
 }
