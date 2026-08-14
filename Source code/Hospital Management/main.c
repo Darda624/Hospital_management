@@ -50,23 +50,23 @@ void main (){
         switch(main_input){
             case '1':{
             system("cls");
-            AppoinmentMain();
+            AppoinmentMain();//reception login
             break;
             }case '2':{
             system("cls");
-            RoomMain();
+            RoomMain();//reception login
             break;
             }case '3':{
             system("cls");
-            PatientMain();
+            PatientMain();//reception login
             break;
             }case '4':{
             system("cls");
-            DoctorMain();
+            DoctorMain();//Hospital Operations Login
             break;
             }case '5':{
             system("cls");
-            PharmacyMain();
+            PharmacyMain();//pharmacy log in
             break;
             }case '6':{
             system("cls");

@@ -58,3 +58,6 @@ void updateStock(){
 void sellMedicine(){
 
 }
+void deleteMedicine(){
+
+}
