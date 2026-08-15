@@ -3,7 +3,7 @@
 void DoctorMain();
 void addDoctor();
 void viewDoctors();
-void searchDoctor();
+int searchDoctor(char search[]);
 void updateDoctor();
 void deleteDoctor();
 
