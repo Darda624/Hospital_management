@@ -1,10 +1,11 @@
 #ifndef PHARMACY_H
 #define PHARMACY_H
-void PharmacyMain();
 void addMedicine();
 void viewMedicines();
-void searchMedicine();
 void updateStock();
+void deleteExpiredMedicines();
 void sellMedicine();
-void deleteMedicine();
+void searchMedicine();
+int nameExists(char name[]);
+void sortMedicinesByName();
 #endif

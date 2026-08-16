@@ -2,4 +2,3 @@ Name         Age   Phone       Nid         Room
 
 Noman Khan   20   01467584862  8359385439  504 
 
-Roman   40   0193458350  847384543  404 

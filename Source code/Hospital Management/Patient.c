@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include "patient.h"
 #include "Room.h"
-#define MAX 256
 void PatientMain(){
     int PatientTF=1;
     while(PatientTF){
@@ -135,25 +134,115 @@ int searchPatient(char search[]){
 }
 
 void updatePatient(){
+    FILE *patient_f1;
+    FILE *patient_f2;
+    patient_f1=fopen("Patient.txt","r");
+    if(patient_f1==NULL){
+        printf("Error while opening file Patient.txt\n");
+        return;
+    }
 
+    patient_f2=fopen("Temp.txt","w");
+    if(patient_f2==NULL){
+        printf("Error while opening file Temp.txt\n");
+        return;
+    }
 
+    char Name_Update[50];
+    printf("Enter Patient Name to update:");
+    scanf(" %49[^\n]",Name_Update);
+
+    char line[100];
+    int found=0;
+
+    while(fgets(line,100,patient_f1)!=NULL){
+        if(strstr(line,Name_Update)!=NULL){
+            found=1;
+            system("cls");
+            printf(">>>Found!Enter new details below:\n");
+
+             char Name[15];
+             char Age[3];
+             char phone[12];
+             char Nid[11];
+             char room[4];
+             printf("Patient Name: ");
+             scanf(" %10[^\n]",Name);
+             printf("\nPatient Age: ");
+             scanf(" %2[^\n]",Age);
+             printf("\nPatient Phone: ");
+             scanf(" %10[^\n]",phone);
+             printf("\nPatient NID: ");
+             scanf(" %[^\n]",Nid);
+             printf("\nRoom Assigned to Patient : ");
+             scanf(" %3[^\n]",room);
+             system("cls");
+
+            fprintf(patient_f2,"\n%s %s %s %s %s ",Name,Age,phone,Nid,room);
+
+        }
+        else{
+            fputs(line,patient_f2);
+        }
+    }
+    fclose(patient_f1);
+    fclose(patient_f2);
+
+    remove("Patient.txt");
+    rename("Temp.txt","Patient.txt");
+
+    if(found){
+        system("cls");
+        printf(">>>Patient Information Update Successfully!\n");
+    }
+    else{
+        system("cls");
+        printf(">>>Patient Not Found!\n");
+    }
 }
 void deletePatient(){
-/**       File *patien_f;
-       File *patien_f2;
-       patien_f=fopen("Patient.txt","r");
-       if(patien_f=NULL){
-        printf("Error while opening file Patient.txt \n")
-       }
-       patien_f2=fopen("Temp.txt","w");
-       if(patien_f2=NULL){
-        printf("Error while opening file Temp.txt \n")
-       }
-       char Name_remove[50];
-       viewPatients();
-       printf("Enter Patient Name");
-       scanf("%[^\n]",Name_remove);**/
+ FILE *patient_f1;
+    FILE *patient_f2;
+    patient_f1=fopen("Patient.txt","r");
+    if(patient_f1==NULL){
+        printf("Error while opening file Doctor.txt\n");
+        return;
+    }
 
+    patient_f2=fopen("Temp.txt","w");
+    if(patient_f2==NULL){
+        printf("Error while opening file Doctor.txt\n");
+        return;
+    }
 
+    char Name_Remove[50];
+    printf("Enter Doctor Name to delete:");
+    scanf(" %49[^\n]",Name_Remove);
 
+    char line[100];
+    int found=0;
+
+    while(fgets(line,100,patient_f1)!=NULL){
+        if(strstr(line,Name_Remove)==NULL){
+            fputs(line,patient_f2);
+        }
+        else{
+            found=1;
+        }
+    }
+
+    fclose(patient_f1);
+    fclose(patient_f2);
+
+    remove("Patient.txt");
+    rename("Temp.txt","Patient.txt");
+
+    if(found){
+        system("cls");
+        printf(">>>Patient Removed Successfully!\n");
+    }
+    else{
+        system("cls");
+        printf(">>>Patient Not Found!\n");
+    }
 }
