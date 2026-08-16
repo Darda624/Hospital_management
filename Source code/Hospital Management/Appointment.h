@@ -3,7 +3,7 @@
 void AppoinmentMain();
 void bookAppointment();
 void viewAppointments();
-void searchAppointment();
+int searchAppointment(char search[]);
 void cancelAppointment();
 
 #endif
