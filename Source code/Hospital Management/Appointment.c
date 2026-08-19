@@ -30,7 +30,8 @@ void AppoinmentMain()
             printf("Enter Patient Name: ");
             scanf(" %[^\n]",search_p);
             int TF = searchAppointment(search_p);
-            if(TF==0){
+            if(TF==0)
+            {
                 system("cls");
                 printf("Not Found");
             }
@@ -153,13 +154,15 @@ void cancelAppointment()
     FILE *appoint_f1;
     FILE *appoint_f2;
     appoint_f1=fopen("Appoointment.txt","r");
-    if(appoint_f1==NULL){
+    if(appoint_f1==NULL)
+    {
         printf("Error while opening file Appointment.txt\n");
         return;
     }
 
     appoint_f2=fopen("Temp.txt","w");
-    if(appoint_f2==NULL){
+    if(appoint_f2==NULL)
+    {
         printf("Error while opening file Temp.txt\n");
         return;
     }
@@ -171,11 +174,14 @@ void cancelAppointment()
     char line[100];
     int found=0;
 
-    while(fgets(line,100,appoint_f1)!=NULL){
-        if(strstr(line,Name_Remove)==NULL){
+    while(fgets(line,100,appoint_f1)!=NULL)
+    {
+        if(strstr(line,Name_Remove)==NULL)
+        {
             fputs(line,appoint_f2);
         }
-        else{
+        else
+        {
             found=1;
         }
     }
@@ -186,11 +192,13 @@ void cancelAppointment()
     remove("Appointment.txt");
     rename("Temp.txt","Appointment.txt");
 
-    if(found){
+    if(found)
+    {
         system("cls");
         printf(">>>Appointment Removed Successfully!\n");
     }
-    else{
+    else
+    {
         system("cls");
         printf(">>>Appointment Not Found!\n");
     }

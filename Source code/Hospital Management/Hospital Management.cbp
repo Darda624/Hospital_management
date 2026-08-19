@@ -31,6 +31,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Doctor.h" />
+		<Unit filename="Login.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Login.h" />
 		<Unit filename="Patient.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -39,10 +43,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Pharmacy.h" />
-		<Unit filename="Room.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="Room.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

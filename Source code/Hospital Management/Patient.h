@@ -5,6 +5,6 @@ void addPatient();
 void viewPatients();
 int searchPatient(char search[]);
 void updatePatient();
-void deletePatient();
+void deletePatient(char Name_Remove[50]);
 
 #endif
