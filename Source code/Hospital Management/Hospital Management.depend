@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1787117685 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\main.c
+1787155701 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\main.c
 	<stdio.h>
 	"Appointment.h"
 	"Patient.h"
@@ -46,7 +46,7 @@
 
 1786996010 c:\users\darda khan\documents\github\hospital_management\source code\hospital management\login.h
 
-1787116107 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\login.c
+1787155021 source:c:\users\darda khan\documents\github\hospital_management\source code\hospital management\login.c
 	<stdio.h>
 	<string.h>
 
